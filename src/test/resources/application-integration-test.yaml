@@ -1,0 +1,9 @@
+spring:
+  # Note: this should be started externally, such as with the docker-compose
+  # file.
+  datasource:
+    driver-class-name: 'org.postgresql.Driver'
+    # see https://github.com/pgjdbc/pgjdbc/issues/265
+    url: 'jdbc:postgresql://localhost:5432/app?stringtype=unspecified'
+    username: 'admin'
+    password: 'admin'
